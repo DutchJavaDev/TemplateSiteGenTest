@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shell’s Sweet Moments</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <meta name="description" content="Shell’s Sweet Moments – homemade cakes, cupcakes, dessert jars and stuffed cookies made with love.">
+  <style>
+    @import url("app.css");
+  </style>
+</head>
+<body>
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-overlay">
+      <h1 style="color:#EE5A93 !important">Shell’s <p style="color:#37A2C0 !important">Sweet Moments</p></h1>
+      <h3>Homemade cakes & indulgent desserts</h3>
+      <!-- <p style="font-size:1rem; color:#7D579D !important; font-weight: bolder;">✨Homemade cakes & indulgent desserts✨</p> -->
+    </div>
+  </div>
+
+  <main>
+    <div class="grid">
+      <section>
+        <h2>Cakes & Desserts</h2>
+        <ul>
+          <li>🎂 Custom Birthday Cakes</li>
+          <li>🧁 Cupcakes</li>
+          <li>🍰 Cake Jars</li>
+          <li>🍓 Cheesecakes</li>
+        </ul>
+
+        <div class="photo">
+          <img src="jars.jpg" alt="Assorted homemade dessert jars and cakes" loading="lazy">
+        </div>
+        <div class="caption">Freshly made dessert jars</div>
+      </section>
+
+      <section>
+        <h2>Stuffed Cookies</h2>
+        <ul>
+          <li>🍫 Nutella Filled</li>
+          <li>🍪 Oreo Explosion</li>
+          <li>🍯 Caramel Delight</li>
+          <li>🎉 Birthday Blast</li>
+        </ul>
+         <div class="photo">
+          <img src="cookie.jpg" alt="Assorted homemade stuffed cookies" loading="lazy">
+        </div>
+        <div class="caption" style="margin-top:1rem">
+          Ooey, gooey & loaded with flavor 💕
+        </div>
+      </section>
+    </div>
+
+    <!-- PRICE LIST -->
+    <section class="prices">
+      <h2 style="color:#EA3B76 !important">Price List</h2>
+      <button class="toggle-btn" onclick="togglePrices()">View Prices 💕</button>
+
+      <div id="priceList" class="price-list hidden">
+        <ul>
+          <li>🎂 Custom Birthday Cake — <strong>from €35</strong></li>
+          <li>🧁 Cupcakes (box of 6) — <strong>€15</strong></li>
+          <li>🍰 Cake Jars — <strong>€5 each</strong></li>
+          <li>🍓 Cheesecake — <strong>from €28</strong></li>
+          <li>🍪 Stuffed Cookies — <strong>€3.50 each</strong></li>
+        </ul>
+        <p class="price-note">Prices may vary based on design & customization 🤍</p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="cta">
+      <h3 style="color:#EA3B76 !important">Order Now</h3>
+      <a href="mailto:shellsweetmoments@gmail.com?subject=Order%20Inquiry&body=Hi%20Shell,%0A%0AI'd%20like%20to%20order:%0A-%20Item:%0A-%20Date:%0A-%20Servings:%0A%0AThanks!">
+        Email Your Order
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    📧 shellsweetmoments@gmail.com
+    <a href="https://www.shellsweetmoments.com" target="_blank">
+      www.shellsweetmoments.com
+    </a>
+  </footer>
+
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    const colors = ["#f2a1b3", "#fffaf4", "#f7d046", "#b46b4d"];
+
+    function fire(y) {
+      confetti({
+        particleCount: 120,
+        spread: 70,
+        origin: { y },
+        colors
+      });
+    }
+
+    function togglePrices() {
+      const list = document.getElementById("priceList");
+      list.classList.toggle("hidden");
+
+      if (!list.classList.contains("hidden")) {
+        confetti({
+          particleCount: 80,
+          spread: 60,
+          origin: { y: 0.7 },
+          colors
+        });
+      }
+    }
+
+    window.addEventListener("load", () => fire(0.45));
+    document.querySelector(".cta a").addEventListener("click", () => fire(0.8));
+  </script>
+
+</body>
+</html>
