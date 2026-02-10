@@ -209,7 +209,7 @@
       font-weight: 600;
       text-decoration: none;
       display: block;
-      margin-top: 0.4rem;
+      margin-bottom: 4.4rem;
     }
 
     @media (min-width: 768px) {
@@ -232,4 +232,4 @@
       background-size: cover;
       color: #333;
     }
-    }
+  }
