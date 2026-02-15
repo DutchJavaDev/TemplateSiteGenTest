@@ -1,0 +1,50 @@
+{
+    "en": {
+        "priceList": "Price List",
+        "cakesTitle": "Homemade Cakes & Desserts",
+        "cakesCaption": "Freshly made dessert jars",
+        "cookiesCaption": "Ooey, gooey & loaded with flavor 💕",
+        "cookiesTitle": "Homemade Stuffed Cookies",
+        "orderNow": "Order Now",
+        "birthdayCakes": "Birthday Cakes",
+        "cupCakes": "Cupcakes",
+        "cakeJars": "Cake Jars",
+        "cheesecakes": "Cheesecakes",
+        "nuttelaFilled": "Nutella Filled",
+        "oreoExplosion": "Oreo Explosion",
+        "caramelDelight": "Caramel Delight",
+        "birthdayBlast": "Birthday Blast"
+    },
+    "es": {
+        "priceList": "Lista de Precios",
+        "cakesTitle": "Pasteles y Postres Caseros",
+        "cakesCaption": "Tarros de postres recién hechos",
+        "cookiesCaption": "Pegajoso, pegajoso y lleno de sabor 💕",
+        "cookiesTitle": "Galletas Rellenas Caseras",
+        "orderNow": "Ordenar Ahora",
+        "birthdayCakes": "Pasteles de Cumpleaños",
+        "cupCakes": "Magdalenas",
+        "cakeJars": "Tarros de Pastel",
+        "cheesecakes": "Cheesecakes",
+        "nuttelaFilled": "Relleno de Nutella",
+        "oreoExplosion": "Explosión de Oreo",
+        "caramelDelight": "Delicia de Caramelo",
+        "birthdayBlast": "Explosión de Cumpleaños"
+    },
+    "fr": {
+        "priceList": "Liste de Prix",
+        "cakesTitle": "Gâteaux et Desserts Maison",
+        "cakesCaption": "Tarros de postres recién hechos",
+        "cookiesCaption": "Fondant, gluant et plein de saveur 💕",
+        "cookiesTitle": "Cookies Fourrés Maison",
+        "orderNow": "Commander Maintenant",
+        "birthdayCakes": "Gâteaux d'Anniversaire",
+        "cupCakes": "Muffins",
+        "cakeJars": "Tarros de Pastel",
+        "cheesecakes": "Cheesecakes",
+        "nuttelaFilled": "Relleno de Nutella",
+        "oreoExplosion": "Explosión de Oreo",
+        "caramelDelight": "Delicia de Caramelo",
+        "birthdayBlast": "Explosión de Cumpleaños"
+    }
+}

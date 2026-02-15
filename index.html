@@ -6,7 +6,6 @@
   <title>Shell’s Sweet Moments</title>
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-
   <meta name="description" content="Shell’s Sweet Moments – homemade cakes, cupcakes, dessert jars and stuffed cookies made with love.">
   <style>
     @import url("app.css");
@@ -16,41 +15,39 @@
   <!-- HERO -->
   <div class="hero">
     <div class="hero-overlay">
-      <h1 style="color:#EE5A93 !important">Shell’s <span style="color:#37A2C0 !important">Sweet Moments</span></h1>
-      <!-- <h3 id="sub-title">Homemade cakes & indulgent desserts</h3> -->
-      <!-- <p style="font-size:1rem; color:#7D579D !important; font-weight: bolder;">✨Homemade cakes & indulgent desserts✨</p> -->
+      <h1><span style="color:#EE5A93 !important; text-decoration: underline; text-decoration-color: #ee5a935b;">Shell’s&nbsp;</span><span style="color:#37A2C0 !important; text-decoration: underline; text-decoration-color: #37a2c057;">&nbsp;Sweet Moments</span></h1>
+    <select id="languageSelect">
+      <option value="en">English</option>
+      <option value="fr">Français</option>
+      <option value="es">Español</option>
+    </select>
     </div>
   </div>
 
   <main>
     <div class="grid">
       <section>
-        <h2>Homemade Cakes & Desserts</h2>
+        <h2 id="cad" class="grid-title">Homemade Cakes & Desserts</h2>
         <ul>
-          <li>🎂 Custom Birthday Cakes</li>
-          <li>🧁 Cupcakes</li>
-          <li>🍰 Cake Jars</li>
-          <li>🍓 Cheesecakes</li>
+          <li>🎂 <span id="bc" class="underline">Birthday Cakes</span></li>
+          <li>🧁 <span id="cc" class="underline">Cupcakes</span></li>
+          <li>🍯 <span id="cj" class="underline">Cake Jars</span></li>
+          <li>🍰 <span id="che" class="underline">Cheesecakes</span></li>
+          <li>&nbsp;</li>
         </ul>
-
-        <!-- <div class="photo">
-          <img src="jars.jpg" alt="Assorted homemade dessert jars and cakes" loading="lazy">
-        </div> -->
-        <div class="caption">Freshly made dessert jars</div>
+        <div id="cakesCaption" class="caption">Freshly made dessert jars</div>
       </section>
 
       <section>
-        <h2>Homemade Stuffed Cookies</h2>
+        <h2 id="hsc" class="grid-title">Homemade Stuffed Cookies</h2>
         <ul>
-          <li>🍫 Nutella Filled</li>
-          <li>🍪 Oreo Explosion</li>
-          <li>🍯 Caramel Delight</li>
-          <li>🎉 Birthday Blast</li>
+          <li>🍫 <span id="nf" class="underline">Nutella Filled</span></li>
+          <li>🍪 <span id="oe" class="underline">Oreo Explosion</span></li>
+          <li>🍯 <span id="cd" class="underline">Caramel Delight</span></li>
+          <li>🎉 <span id="bb" class="underline">Birthday Blast</span></li>
+          <li>&nbsp;</li>
         </ul>
-         <!-- <div class="photo">
-          <img src="cookie.jpg" alt="Assorted homemade stuffed cookies" loading="lazy">
-        </div> -->
-        <div class="caption" style="margin-top:1rem">
+        <div id="cookiesCaption" class="caption" style="margin-top:1rem">
           Ooey, gooey & loaded with flavor 💕
         </div>
       </section>
@@ -58,24 +55,49 @@
 
     <!-- PRICE LIST -->
     <section class="prices">
-      <h2 style="color:#EA3B76 !important">Price List</h2>
-      <button class="toggle-btn" onclick="togglePrices()">View Prices 💕</button>
-
+      <h2 id="priceListTitle" style="color:#EA3B76 !important; font-family: Arial, sans-serif;">Price List</h2>
       <div id="priceList" class="price-list hidden">
         <ul>
+            <li>🍪 Stuffed Cookies<br>
+            1x <strong>€3.50 - €4.00 each</strong>
+            <br>
+            <div style="margin-bottom: 10px;">
+              <ul>
+                <li><strong>Pack of 4: €12</strong></li>
+                <li><strong>Pack of 6: €16 - €18</strong></li>
+                <li><strong>Pack of 8: € 22 - €24</strong></li>
+                <li><strong>Pack of 12: €30 - €34</strong></li>
+            </ul>
+            <span>🍪 Special Box</span><br>
+            <ul>
+              <li><strong>6 mixed stuffed cookies ( gift box): €20</strong></li>
+              <li><strong>12 mixed stuffed cookies ( premium box): €36 - €40</strong></li>
+            </ul>
+
+            <span>🍪 Optional add-ons</span><br>
+            <ul>
+              <li><strong>Custom colors / hearts / sprinkles: +€2 - €5</strong></li>
+              <li><strong>Personalized box</strong></li>
+              <li><strong>Extra filling : €1 per extra cookie </strong></li>
+            </ul>
+            </div>
+          </li>
+
+
           <li>🎂 Custom Birthday Cake — <strong>from €35</strong></li>
           <li>🧁 Cupcakes (box of 6) — <strong>€15</strong></li>
           <li>🍰 Cake Jars — <strong>€5 each</strong></li>
           <li>🍓 Cheesecake — <strong>from €28</strong></li>
-          <li>🍪 Stuffed Cookies — <strong>€3.50 each</strong></li>
+          <li>&nbsp;</li>
         </ul>
         <p class="price-note">Prices may vary based on design & customization 💕</p>
       </div>
+      <button style="color: #EA3B76; font-family: Arial, sans-serif; font-weight: bolder;" class="toggle-btn" onclick="togglePrices()">View Prices 💕</button>
     </section>
 
     <!-- CTA -->
     <div class="cta">
-      <h3 style="color:#EA3B76 !important">Order Now</h3>
+      <h3 id="orno" style="color:#EA3B76 !important">Order Now</h3>
       <a href="mailto:shellsweetmoments@gmail.com?subject=Order%20Inquiry&body=Hi%20Shell,%0A%0AI'd%20like%20to%20order:%0A-%20Item:%0A-%20Date:%0A-%20Servings:%0A%0AThanks!">
         Email Your Order
       </a>
@@ -94,6 +116,7 @@
 
   <!-- Confetti -->
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="app.js"></script>
   <script>
     const colors = ["#f2a1b3", "#fffaf4", "#f7d046", "#b46b4d"];
 
