@@ -10,7 +10,7 @@
 
     body {
       margin: 0;
-      background: url('9, 2026, 09_48_49 PM.png') no-repeat center center fixed;
+      background: url('main_bg.png') no-repeat center center fixed;
       background-size: cover;
       color: #333;
     }
@@ -85,12 +85,12 @@
         text-align: center;
         margin-bottom: 1rem;
         font-size: 1.7rem;
-    } 
+    }
 
     li {
       padding: 0.6rem 0;
       font-weight: bolder;
-      font-size: 1.6rem;
+      font-size: 1.2rem;
       color: #7D579D !important;
       font-family: Arial, sans-serif;
     }
@@ -221,6 +221,25 @@
       margin-bottom: 4.4rem;
     }
 
+    #languageSelect{
+      margin-top: 5px;
+      padding: 0.6rem 1.2rem;
+      font-size: 1.2rem;
+      border-radius: 10px;
+    }
+
+    @font-face {
+      font-family: NotoColorEmojiLimited;
+      unicode-range: U+1F1E6-1F1FF;
+      src: url(https://raw.githack.com/googlefonts/noto-emoji/main/fonts/NotoColorEmoji.ttf);
+  }
+
+  div {
+    font-family: 'NotoColorEmojiLimited', -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 
+    'Segoe UI Emoji', 'Segoe UI Symbol';
+  }
+
     @media (min-width: 768px) {
       main {
         max-width: 900px;
@@ -233,10 +252,13 @@
         gap: 1rem;
       }
 
-      
+      #sdfsd {
+        margin-left: 43%;
+      }
+
     body {
       margin: 0;
-      background: url('9, 2026, 09_48_49 PM.png');
+      background: url('main_bg.png') no-repeat center center fixed;
       background-size: cover;
       color: #333;
     }

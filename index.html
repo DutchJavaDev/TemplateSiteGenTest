@@ -16,11 +16,13 @@
   <div class="hero">
     <div class="hero-overlay">
       <h1><span style="color:#EE5A93 !important; text-decoration: underline; text-decoration-color: #ee5a935b;">Shell’s&nbsp;</span><span style="color:#37A2C0 !important; text-decoration: underline; text-decoration-color: #37a2c057;">&nbsp;Sweet Moments</span></h1>
-    <select id="languageSelect">
-      <option value="en">English</option>
-      <option value="fr">Français</option>
-      <option value="es">Español</option>
+      <div id="sdfsd">
+          <span id="languageFlag" style="font-size: 2rem;">ES</span>&nbsp;<select id="languageSelect">
+          <option value="en">English</option>
+          <option value="fr">Français</option>
+          <option value="es">Español</option>
     </select>
+      </div>
     </div>
   </div>
 
@@ -55,62 +57,68 @@
 
     <!-- PRICE LIST -->
     <section class="prices">
-      <h2 id="priceListTitle" style="color:#EA3B76 !important; font-family: Arial, sans-serif;">Price List</h2>
+      <h1 id="priceListTitle" style="color:#EA3B76 !important; font-family: Arial, sans-serif;">Price List</h1>
       <div id="priceList" class="price-list hidden">
         <ul>
-            <li>🍪 Stuffed Cookies<br>
-            1x <strong>€3.50 - €4.00 each</strong>
+            <li><h3 id="scl">Stuffed Cookies</h3>
+            <strong style="font-size: 1.2rem;"><span id="ssc"></span></strong>
             <br>
             <div style="margin-bottom: 10px;">
               <ul>
-                <li><strong>Pack of 4: €12</strong></li>
-                <li><strong>Pack of 6: €16 - €18</strong></li>
-                <li><strong>Pack of 8: € 22 - €24</strong></li>
-                <li><strong>Pack of 12: €30 - €34</strong></li>
+                <li style="font-size: 1.2rem;" id="packOf4">Pack of 4: €12</li>
+                <li style="font-size: 1.2rem;" id="packOf6">Pack of 6: €16 - €18</li>
+                <li style="font-size: 1.2rem;" id="packOf8">Pack of 8: € 22 - €24</li>
+                <li style="font-size: 1.2rem;" id="packOf12">Pack of 12: €30 - €34</li>
             </ul>
-            <span>🍪 Special Box</span><br>
+            <h3 id="specialBox">🍪 Special Box</h3>
             <ul>
-              <li><strong>6 mixed stuffed cookies ( gift box): €20</strong></li>
-              <li><strong>12 mixed stuffed cookies ( premium box): €36 - €40</strong></li>
+              <li id="giftBox6Mixed" style="font-size: 1.2rem;">6 mixed stuffed cookies ( gift box): €20</li>
+              <li style="font-size: 1.2rem;" id="premiumBox12Mixed">12 mixed stuffed cookies ( premium box): €36 - €40</li>
             </ul>
 
-            <span>🍪 Optional add-ons</span><br>
+            <h3 id="optionalAddOns">🍪 Optional add-ons</h3>
             <ul>
-              <li><strong>Custom colors / hearts / sprinkles: +€2 - €5</strong></li>
-              <li><strong>Personalized box</strong></li>
-              <li><strong>Extra filling : €1 per extra cookie </strong></li>
+              <li id="customColorsAddOn" style="font-size: 1.2rem;">Custom colors / hearts / sprinkles: +€2 - €5</li>
+              <li id="personalizedBoxAddOn" style="font-size: 1.2rem;"><strong>Personalized box</strong></li>
+              <li id="extraFillingAddOn" style="font-size: 1.2rem;"><strong>Extra filling : €1 per extra cookie </strong></li>
             </ul>
             </div>
           </li>
 
+          <li><h3 id="cakes">🎂 Cakes</h3>
+            <div>
+              <ul>
+                <li id="bentoCake" style="font-size: 1.2rem;">Bento Cake (mini 10 – 12 cm) perfect for small celebration (serves 2 – 4): €18.00</li>
+                <li id="smallCake" style="font-size: 1.2rem;">Small Cake (15 cm) serves 6 – 8 (choose flavor & color): €35.00</li>
+                <li id="mediumCake" style="font-size: 1.2rem;">Medium Cake (20 cm) serves 10 – 12: €55.00</li>
+                <li id="largeCake" style="font-size: 1.2rem;">Large Cake (25 cm) serves 16 – 20: €85.00</li>
+              </ul>
+            </div>
+          </li>
 
-          <li>🎂 Custom Birthday Cake — <strong>from €35</strong></li>
-          <li>🧁 Cupcakes (box of 6) — <strong>€15</strong></li>
-          <li>🍰 Cake Jars — <strong>€5 each</strong></li>
-          <li>🍓 Cheesecake — <strong>from €28</strong></li>
           <li>&nbsp;</li>
         </ul>
-        <p class="price-note">Prices may vary based on design & customization 💕</p>
+        <p id="vary" class="price-note">Prices may vary based on design & customization 💕</p>
       </div>
-      <button style="color: #EA3B76; font-family: Arial, sans-serif; font-weight: bolder;" class="toggle-btn" onclick="togglePrices()">View Prices 💕</button>
+      <button id="viewPriceBtn" style="color: #EA3B76; font-family: Arial, sans-serif; font-weight: bolder;" class="toggle-btn" onclick="togglePrices()">View Prices 💕</button>
     </section>
 
     <!-- CTA -->
     <div class="cta">
       <h3 id="orno" style="color:#EA3B76 !important">Order Now</h3>
-      <a href="mailto:shellsweetmoments@gmail.com?subject=Order%20Inquiry&body=Hi%20Shell,%0A%0AI'd%20like%20to%20order:%0A-%20Item:%0A-%20Date:%0A-%20Servings:%0A%0AThanks!">
+      <a style="color: #EA3B76; background: linear-gradient(135deg, var(--pink), var(--gold))" id="emailOrder" href="mailto:shellsweetmoments@gmail.com?subject=Order%20Inquiry&body=Hi%20Shell,%0A%0AI'd%20like%20to%20order:%0A-%20Item:%0A-%20Date:%0A-%20Servings:%0A%0AThanks!">
         Email Your Order
       </a>
 
-      <a style="margin-top: 20px !important" href="tel:+442071234567">+44 20 7123 4567 📞</a>
+      <a style="margin-top: 20px !important; color: #EA3B76; background: linear-gradient(135deg, var(--pink), var(--gold))" href="tel:+442071234567"><strong>+44 20 7123 4567 📞</strong></a>
     </div>
   </main>
   
 
-  <footer>
-    📧 shellsweetmoments@gmail.com
+  <footer style="color: #37A2C0">
+    <h4>📧 shellsweetmoments@gmail.com</h4>
     <a href="https://www.shellsweetmoments.com" target="_blank">
-      www.shellsweetmoments.com
+      <h4 style="color: #37A2C0;">🌐 www.shellsweetmoments.com</h4>
     </a>
   </footer>
 

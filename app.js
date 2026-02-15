@@ -18,7 +18,6 @@ window.onload = async (event) => {
     .then(response => response.json())
     .then(data => data);
 
-    console.log('Languages loaded:', languages);
     updateView();
 
   const languageSelect = document.getElementById('languageSelect');
@@ -76,23 +75,76 @@ window.onload = async (event) => {
 
     const cookiesCaption = document.getElementById('cookiesCaption');
     cookiesCaption.textContent = languages[currentLanguage]['cookiesCaption'];
+
+    const singleCookie = document.getElementById('ssc');
+    singleCookie.textContent = languages[currentLanguage]['singleCookie'];
+
+    const singleStuffedCookie = document.getElementById('ssc');
+    singleStuffedCookie.textContent = languages[currentLanguage]['singleStuffedCookie'];
+
+    const stuffedCookies = document.getElementById('scl');
+    stuffedCookies.textContent = languages[currentLanguage]['stuffedCookies'];
+
+    const packOf4 = document.getElementById('packOf4');
+    packOf4.textContent = languages[currentLanguage]['packOf4'];
+
+    const packOf6 = document.getElementById('packOf6');
+    packOf6.textContent = languages[currentLanguage]['packOf6'];
+
+    const packOf8 = document.getElementById('packOf8');
+    packOf8.textContent = languages[currentLanguage]['packOf8'];
+
+    const packOf12 = document.getElementById('packOf12');
+    packOf12.textContent = languages[currentLanguage]['packOf12'];
+
+    const specialBox = document.getElementById('specialBox');
+    specialBox.textContent = languages[currentLanguage]['specialBox'];
+
+    const giftBox6Mixed = document.getElementById('giftBox6Mixed');
+    giftBox6Mixed.textContent = languages[currentLanguage]['giftBox6Mixed'];
+
+    const premiumBox12Mixed = document.getElementById('premiumBox12Mixed');
+    premiumBox12Mixed.textContent = languages[currentLanguage]['premiumBox12Mixed'];
+
+    const optionalAddOns = document.getElementById('optionalAddOns');
+    optionalAddOns.textContent = languages[currentLanguage]['optionalAddOns'];
+
+    const viewPriceBtn = document.getElementById('viewPriceBtn');
+    viewPriceBtn.textContent = languages[currentLanguage]['viewPrice'];
+
+    const emailOrder = document.getElementById('emailOrder');
+    emailOrder.textContent = languages[currentLanguage]['emailOrder'];
+
+    const priceNote = document.getElementById('vary');
+    priceNote.textContent = languages[currentLanguage]['vary'];
+
+    const cakes = document.getElementById('cakes');
+    cakes.textContent = languages[currentLanguage]['cakes'];
+
+    const customColorsAddOn = document.getElementById('customColorsAddOn');
+    customColorsAddOn.textContent = languages[currentLanguage]['customColorsAddOn'];
+
+    const personalizedBoxAddOn = document.getElementById('personalizedBoxAddOn');
+    personalizedBoxAddOn.textContent = languages[currentLanguage]['personalizedBoxAddOn'];
+
+    const extraFillingAddOn = document.getElementById('extraFillingAddOn');
+    extraFillingAddOn.textContent = languages[currentLanguage]['extraFillingAddOn'];
+
+    const bentoCake = document.getElementById('bentoCake');
+    bentoCake.textContent = languages[currentLanguage]['bentoCake'];
+
+    const smallCake = document.getElementById('smallCake');
+    smallCake.textContent = languages[currentLanguage]['smallCake'];
+
+    const mediumCake = document.getElementById('mediumCake');
+    mediumCake.textContent = languages[currentLanguage]['mediumCake'];
+
+    const largeCake = document.getElementById('largeCake');
+    largeCake.textContent = languages[currentLanguage]['largeCake'];
+
+    const languageFlag = document.getElementById('languageFlag');
+    languageFlag.innerHTML = `${languages[currentLanguage]['language']}`;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   function setCookie(name,value,days) {
     var expires = "";
