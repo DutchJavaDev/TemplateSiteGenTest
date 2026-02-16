@@ -15,6 +15,10 @@
       color: #333;
     }
 
+    #sdfsd {
+      margin-left: 20%;
+    }
+
     /* HERO */
     .hero {
       position: relative;
@@ -88,11 +92,18 @@
     }
 
     li {
+      margin: 0px auto;
       padding: 0.6rem 0;
       font-weight: bolder;
       font-size: 1.2rem;
       color: #7D579D !important;
       font-family: Arial, sans-serif;
+     
+    }
+
+    .grid li {
+      color:red;
+      margin-left: 25% !important;
     }
 
     .underline {
@@ -253,7 +264,7 @@
       }
 
       #sdfsd {
-        margin-left: 43%;
+        margin-left: 40%;
       }
 
     body {
